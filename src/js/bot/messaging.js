@@ -17,7 +17,7 @@ function sendMsg(message) {
     } else if (message.content.toLowerCase() === 'how are you?') {
         message.reply('Good.');
     } else if (message.content.startsWith(prefix)) {
-        admin.kickMember(message);
+        admin.manipulateMember(message);
     }
 };
 

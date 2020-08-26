@@ -5,7 +5,6 @@ const client = new Client();
 // Importing bot modules
 const bot = require('./bot/bot');
 const messaging = require('./bot/messaging');
-const admin = require('./bot/adminfunc');
 
 // Prepare bot
 client.on('ready', () => {

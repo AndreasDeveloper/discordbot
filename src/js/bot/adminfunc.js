@@ -2,7 +2,7 @@
 const prefix = '$';
 
 // Kick member
-function kickMember(message) {
+function manipulateMember(message) {
     // Destructure command user inserts & trim whitespace
     const [cmd_name, ...args] = message.content.trim().substring(prefix.length).split(/\s+/);
 
@@ -23,5 +23,5 @@ function kickMember(message) {
 
 // Export modules
 module.exports = {
-    kickMember
+    manipulateMember
 };
