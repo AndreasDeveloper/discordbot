@@ -1,0 +1,23 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "Discord bot for testing purposes of discordjs module built for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/js/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreasDeveloper/discordbot.git"
+  },
+  "author": "AndreasDEV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreasDeveloper/discordbot/issues"
+  },
+  "homepage": "https://github.com/AndreasDeveloper/discordbot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  }
+}
