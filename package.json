@@ -4,7 +4,7 @@
   "description": "Discord bot for testing purposes of discordjs module built for nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/js/bot.js"
+    "start": "nodemon ./src/js/index.js"
   },
   "repository": {
     "type": "git",
