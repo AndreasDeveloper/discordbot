@@ -1,3 +1,8 @@
+// Imports
+require('dotenv').config();
+const { WebhookClient } = require('discord.js');
+const webcli = new WebhookClient(process.env.WEBHOOK_ID, process.env.WEBHOOK_TOKEN);
+
 // Variable
 const prefix = '$';
 
@@ -35,6 +40,10 @@ async function manipulateMember(message) {
             console.log(err);
             message.channel.send(err.message);
         }
+    } else if (cmd_name === 'announce') {
+        const msg = args.join(' ');
+        console.log(msg);
+        webcli.send('test');
     }
 }
 
