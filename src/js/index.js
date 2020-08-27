@@ -9,9 +9,6 @@ const bot = require('./bot/bot');
 const messaging = require('./bot/messaging');
 const role = require('./bot/rolefunc');
 
-// Creating webhooks
-const webhookClient = new WebhookClient(process.env.WEBHOOK_ID, process.env.WEBHOOK_TOKEN);
-
 // Prepare bot
 client.on('ready', () => {
     bot.readyBot(client);

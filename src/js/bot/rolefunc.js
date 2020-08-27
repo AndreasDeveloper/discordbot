@@ -5,7 +5,6 @@ function addRole(reaction, user) {
     const member = reaction.message.guild.members.cache.get(user.id);
 
     if (reaction.message.id === '748326686592073828') {
-        console.log('t')
         switch (name) {
             case '🥬':
                 member.roles.add('748325430091841556');
@@ -19,12 +18,10 @@ function addRole(reaction, user) {
 
 // Manage / Remove roles
 function removeRole(reaction, user) {
-    console.log('testr');
     const { name } = reaction.emoji;
     const member = reaction.message.guild.members.cache.get(user.id);
 
     if (reaction.message.id === '748326686592073828') {
-        console.log('t')
         switch (name) {
             case '🥬':
                 member.roles.remove('748325430091841556');
